@@ -3,7 +3,7 @@
     <div :class="sizeClasses">
       <div ref="prependDiv" v-if="$slots.prepend || prepend" class="input-group-prepend">
         <slot name="prepend">
-          <span class="input-group-text">{{ prepend }}</span>
+          <span class="input-group-text"><i :class="prepend" ></i></span>
         </slot>
       </div>
       <input
